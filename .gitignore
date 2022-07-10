@@ -1,0 +1,13 @@
+bin/*
+!bin/simulatorplot
+build/*
+out/*
+env/*
+!build.sh
+!install.sh
+.vscode
+test/CMakeLists.txt
+*.raw
+*.log
+*.csv
+.DS_STORE

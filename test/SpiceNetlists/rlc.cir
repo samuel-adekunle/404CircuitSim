@@ -1,0 +1,9 @@
+* C:\users\sam\My Documents\LTspiceXVII\Draft2.asc
+V1 N001 0 5
+R1 N002 N001 100
+R2 N003 N002 1k
+C1 N003 0 1m
+C2 N002 0 1m
+.tran 0 1 0 0.005m
+.backanno
+.end

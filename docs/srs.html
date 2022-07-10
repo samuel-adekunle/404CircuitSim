@@ -1,0 +1,57 @@
+<h1 id="error-404-circuit-simulator">Error 404 Circuit Simulator</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<p><a href="#introduction">1 Introduction</a></p>
+<p><a href="#purpose">1.1 Purpose</a></p>
+<p><a href="#intended-audience">1.2 Intended Audience</a></p>
+<p><a href="#intended-use">1.3 Intended Use</a></p>
+<p><a href="#scope">1.4 Scope</a></p>
+<p><a href="#definitions-and-acronyms">1.5 Definitions and Acronyms</a></p>
+<p><a href="#overall-description">2 Overall Description</a></p>
+<p><a href="#user-needs">2.1 User Needs</a></p>
+<p><a href="#assumptions-and-dependencies">2.2 Assumptions and Dependencies</a></p>
+<p><a href="#system-features-and-requirements">3 System Features and Requirements</a></p>
+<p><a href="#functional-requirements">3.1 Functional Requirements</a></p>
+<p><a href="#external-interface-requirements">3.2 External Interface Requirements</a></p>
+<p><a href="#system-features">3.3 System Features</a></p>
+<p><a href="#nonfunctional-requirements">3.4 Nonfunctional Requirements</a></p>
+<h2 id="introduction">1 Introduction</h2>
+<h3 id="purpose">1.1 Purpose</h3>
+<p>The purpose of this software is to simulate circuits and solve voltages at every node and currents of every component by using nodal analysis. This software emulates LT Spice, however, using a command line interface.</p>
+<h3 id="intended-audience">1.2 Intended Audience</h3>
+<p>Our intended audience would be electrical engineers who would prefer a less bloated and cross platform solution than LT Spice. This would also include other developers who would like to fork this project, or testers to ensure our program is bug-free.</p>
+<h3 id="intended-use">1.3 Intended Use</h3>
+<p>Intended use would be to generate output data files using our simulator that can be viewed using our python script, specifically we accept net lists in the exact same format as LT Spice, however, we have yet to implement specific models.</p>
+<h3 id="scope">1.4 Scope</h3>
+<p>Our circuit simulator uses conductance matrices to calculate voltages and currents using methods such as basic nodal analysis, iteration and equivalent models to certain components. Our goals while pursuing this project, was to create a much more performant alternative, with a nicer UI, compared to LT Spice. The benefits to using our program, is speed, <Insert benchmarks here>, simplicity, control of output format.</p>
+<h3 id="definitions-and-acronyms">1.5 Definitions and Acronyms</h3>
+<p>Our simulator uses theoretical principles, which may not hold to precision when compared to practical examples, hence we’d recommend not using this to calculate to such a high precision, especially when working with non-linear components.</p>
+<h2 id="overall-description">2 Overall Description</h2>
+<h3 id="user-needs">2.1 User Needs</h3>
+<p>The user would typically have an existing netlist file, this should start with lines containing component names, connected nodes, and their intrinsic properties, i.e. resistance or capacitance.</p>
+<h3 id="assumptions-and-dependencies">2.2 Assumptions and Dependencies</h3>
+<p>We assume ideal characteristics of components, in that for most components there is no parasitic capacitance or inductance, moreover, we also assume that nodal analysis is always true, which also assumes wires and connectors are essentially perfect conductors.</p>
+<p>Dependencies: <code>Python3</code> &amp; install packages from <code>requirements.txt</code></p>
+<h2 id="system-features-and-requirements">3 System Features and Requirements</h2>
+<h3 id="functional-requirements">3.1 Functional Requirements</h3>
+<ul>
+<li>Parse netlist into various data structures</li>
+<li>Generate conductance matrix from data structures</li>
+<li>Invert/Solve conductance matrix to find voltages and currents</li>
+<li>Print results into CSV or space separated formats and plot</li>
+</ul>
+<h3 id="external-interface-requirements">3.2 External Interface Requirements</h3>
+<ul>
+<li>The CSV produced is of standard formatting and can be used in conjunction with any software that accepts CSV formats.</li>
+<li>Anything else to go here &lt;&lt; REMOVE</li>
+</ul>
+<h3 id="system-features">3.3 System Features</h3>
+<ul>
+<li>We require the Eigen library to process our matrices and use LU decomposition, we also considered using Cholesky Decomposition, however, &lt;&lt; need to do this</li>
+</ul>
+<h3 id="nonfunctional-requirements">3.4 Nonfunctional requirements</h3>
+<ul>
+<li>Ensure memory safety</li>
+<li>Create a functioning API that is legible and usable for others</li>
+<li>Create a performant solution which can be energy efficient and much quicker than LT SPICE</li>
+<li>&lt;&lt; Anything else here</li>
+</ul>

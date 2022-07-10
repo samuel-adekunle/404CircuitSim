@@ -1,0 +1,7 @@
+* D:\home\jjl119\Imperial\SummerProject\404CircuitSim\test\SpiceNetlists\Draft4.asc
+R1 N002 0 100
+V1 N001 0 SINE(0 5 1000)
+C1 N001 N002 100n
+.tran 0 5m 0 0.001m
+.backanno
+.end

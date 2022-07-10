@@ -1,0 +1,11 @@
+* A test circuit to demonstrate SPICE syntax
+V1 N003 0 SINE(2 1 1000)
+R1 N001 N003 1k
+C1 N001 0 1µ
+I1 0 N004 0.1
+*D1 N004 N002 D
+L1 N002 N001 1m
+R2 N002 N001 1Meg
+*Q1 N003 N001 0 NPN
+.tran 0 10ms 0 1us
+.end

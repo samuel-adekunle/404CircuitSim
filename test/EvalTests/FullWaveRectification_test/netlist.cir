@@ -1,0 +1,13 @@
+* D:\home\jjl119\Imperial\404CircuitSim\test\EvalTests\SingleDiode_test\Draft2.asc
+D1 0 N001 D
+D2 N001 N002 D
+D3 0 N003 D
+D4 N003 N002 D
+V1 N001 N003 SINE(0 10 50)
+R1 N002 0 1000
+C1 N002 0 10µ
+.model D D
+.lib C:\users\jjl119\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 50m 0 0.005m
+.backanno
+.end

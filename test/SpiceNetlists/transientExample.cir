@@ -1,0 +1,9 @@
+* D:\home\jjl119\Imperial\404CircuitSim\test\EvalTests\DoubleDiode_test\Draft3.asc
+R1 N001 N002 1000
+R2 N001 N003 2000
+C1 N002 0 10n
+L1 N003 0 1
+V2 N001 0 SINE(0 1 1000)
+.tran 0 5m 0m 0.0001m
+.backanno
+.end

@@ -1,0 +1,9 @@
+* Multiple Phase Netlist (Demo)
+R1 N001 N003 1000
+R2 N001 N002 2000
+C1 N003 0 10n
+L1 N002 0 1
+I1 0 N001 SINE(0 0.1m 1000)
+.tran 0 5m 0 0.01m
+.backanno
+.end

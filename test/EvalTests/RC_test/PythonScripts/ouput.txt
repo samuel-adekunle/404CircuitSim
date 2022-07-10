@@ -1,0 +1,14 @@
+            time  V(n001)  V(n002)  I(C1)  I(R1)  I(V1)
+0.0001  4.756179      NaN      NaN    NaN    NaN    NaN
+0.0002  4.524354      NaN      NaN    NaN    NaN    NaN
+0.0003  4.303823      NaN      NaN    NaN    NaN    NaN
+0.0004  4.094034      NaN      NaN    NaN    NaN    NaN
+0.0005  3.894466      NaN      NaN    NaN    NaN    NaN
+...          ...      ...      ...    ...    ...    ...
+0.0096  0.041158      NaN      NaN    NaN    NaN    NaN
+0.0097  0.039152      NaN      NaN    NaN    NaN    NaN
+0.0098  0.037243      NaN      NaN    NaN    NaN    NaN
+0.0099  0.035427      NaN      NaN    NaN    NaN    NaN
+0.0100  0.033690      NaN      NaN    NaN    NaN    NaN
+
+[100 rows x 6 columns]

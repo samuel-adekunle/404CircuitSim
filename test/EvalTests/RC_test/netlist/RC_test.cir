@@ -1,0 +1,8 @@
+* RC_test.cir
+V1 N002 0 5
+R1 N001 0 {R}
+C1 N001 N002 10µ
+.STEP PARAM R 100 1000 100
+.tran 0 10m 0 0.01m
+.backanno
+.end

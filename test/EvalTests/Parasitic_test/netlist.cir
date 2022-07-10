@@ -1,0 +1,9 @@
+* C:\Program Files\LTC\LTspiceXVII\Draft1.asc
+V1 N001 0 SINE(0 0.2 1000)
+D1 N002 0 D
+R1 N002 N001 1000
+.model D D
+.lib C:\users\jjl119\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 5m 0 0.001m
+.backanno
+.end

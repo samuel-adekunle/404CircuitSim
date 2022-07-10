@@ -1,0 +1,9 @@
+* C:\users\sam\My Documents\ELEC40004\404CircuitSim\test\SpiceNetlists\Draft1.asc
+V1 N003 0 5
+V3 N003 N001 3
+R1 N002 N001 1k
+R2 N005 N004 100
+C1 N002 N005 10u
+V4 N005 0 1
+.backanno
+.end

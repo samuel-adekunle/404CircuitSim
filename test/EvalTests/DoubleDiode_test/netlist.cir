@@ -1,0 +1,10 @@
+* D:\home\jjl119\Imperial\404CircuitSim\test\EvalTests\FullWaveRectification_test\Draft1.asc
+D1 N001 N002 D
+D2 N002 N001 D
+V1 N001 0 SINE(0 2.5 1)
+R1 N002 0 1000
+.model D D
+.lib C:\users\jjl119\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 2 0 0.01
+.backanno
+.end

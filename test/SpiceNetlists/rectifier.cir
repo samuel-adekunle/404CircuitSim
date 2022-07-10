@@ -1,0 +1,8 @@
+* D:\home\jjl119\Imperial\SummerProject\404CircuitSim\test\SpiceNetlists\rectifier.asc
+D1 N001 N002 D
+V1 N001 0 SINE(0 5 1000)
+R1 N002 0 100
+.model D D
+.tran 0 2m 0 0.001m
+.backanno
+.end
